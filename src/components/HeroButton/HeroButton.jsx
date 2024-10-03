@@ -10,7 +10,7 @@ const HeroButton = () => {
     };
 
     return (
-        <div>
+        <div className="hero__cta-container">
             <button className="hero__cta" onClick={toggleModal}>
                 Get a Free Quote
             </button>

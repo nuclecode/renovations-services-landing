@@ -1,3 +1,9 @@
+.hero__cta-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 50px;
+}
 .hero__cta {
     background-color: #D3D3D3; // Light Gray (Primary)
     color: #0000FF;            // Blue (Accent)
