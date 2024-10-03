@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.scss';
 import heroImage from '../../images/hero_image_renovation_house.jpg'; 
 import HeroButton from '../HeroButton/HeroButton';
 
 const Hero = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <section className="hero">
             <div className="hero__content">
@@ -14,8 +20,16 @@ const Hero = () => {
                 </p>
                 <HeroButton />
             </div>
+
             <div className="hero__image-container">
-                <img src={heroImage} alt="Man painting a wall during home renovation" className="hero__image" />
+                {!imageLoaded && <div className="hero__image-skeleton"></div>} {/* Skeleton Placeholder */}
+                <img
+                    src={heroImage}
+                    alt="Man plastering a wall during home renovation"
+                    className={`hero__image ${imageLoaded ? 'loaded' : 'loading'}`} 
+                    onLoad={handleImageLoad}
+                    rel="preload"
+                />
             </div>
         </section>
     );

@@ -5,6 +5,7 @@ const Footer = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         message: '',
     });
 
@@ -20,19 +21,20 @@ const Footer = () => {
         // Handle form submission (e.g., send data to an API)
         console.log(formData);
         // Reset form after submission
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
     };
 
     return (
         <footer className="footer">
             <div className="footer-content">
                 <h2>Contact Us</h2>
-                <form onSubmit={handleSubmit} className="contact-form">
+                <form onSubmit={handleSubmit} className="contact-form" id="contact-form-section">
                     <label>
                         Name:
                         <input
                             type="text"
                             name="name"
+                            placeholder="Your name"
                             value={formData.name}
                             onChange={handleChange}
                             required
@@ -43,7 +45,19 @@ const Footer = () => {
                         <input
                             type="email"
                             name="email"
+                            placeholder="Your Email"
                             value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                    </label>
+                    <label>
+                        Phone:
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Your Phone number"
+                            value={formData.phone}
                             onChange={handleChange}
                             required
                         />
@@ -52,6 +66,7 @@ const Footer = () => {
                         Message:
                         <textarea
                             name="message"
+                            placeholder="Your message"
                             value={formData.message}
                             onChange={handleChange}
                             required
