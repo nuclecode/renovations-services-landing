@@ -1,0 +1,226 @@
+.footer {
+    background-color: #D3D3D3; // Light Gray (Primary)
+    padding: 1.5rem;
+    text-align: center;
+    color: #0000FF; // Blue (Accent)
+    
+    .footer-content {
+        max-width: 100%;
+        margin: 0 auto;
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem; // Adjusted for smaller screens
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            label {
+                margin-bottom: 1rem;
+                color: #0000FF; // Blue (Accent)
+                font-size: 1rem; // Mobile-first font size
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 0.5rem;
+                margin-top: 0.5rem;
+                border: 1px solid #0000FF; // Blue (Accent)
+                border-radius: 5px;
+                font-size: 1rem; // Consistent font size for mobile
+            }
+
+            .submit-button {
+                background-color: #0000FF; // Blue (Accent)
+                color: #FFFFFF; // White (Secondary)
+                border: none;
+                padding: 0.75rem;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+                font-size: 1rem;
+
+                &:hover {
+                    background-color: #D3D3D3; // Light Gray (Primary)
+                    color: #0000FF; // Blue text on hover
+                }
+            }
+        }
+
+        .contact-info {
+            margin-bottom: 1.5rem;
+            font-size: 1rem; // Adjust font size for small screens
+
+            a {
+                color: #0000FF; // Blue (Accent)
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            flex-direction: column; // Stack the links on mobile
+            gap: 0.5rem; // Reduced gap for mobile
+            margin-bottom: 1.5rem;
+
+            .social-link {
+                color: #0000FF; // Blue (Accent)
+                text-decoration: none;
+                padding: 0.5rem 0; // Adjusted padding for mobile
+                border: 1px solid #0000FF; // Blue (Accent)
+                border-radius: 5px;
+                transition: background-color 0.3s, transform 0.3s;
+
+                &:hover {
+                    background-color: #0000FF; // Blue (Accent)
+                    color: #FFFFFF; // White (Secondary)
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+
+    // Media Queries for Tablets and Desktops
+    @media (min-width: 768px) {
+        padding: 2rem;
+
+        .footer-content {
+            max-width: 600px;
+
+            h2 {
+                font-size: 2rem; // Increase font size for tablets
+            }
+
+            .social-media {
+                flex-direction: row; // Align links in a row for tablets
+                gap: 1rem; // Increase gap for larger screens
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        padding: 3rem;
+
+        .footer-content {
+            max-width: 800px;
+
+            h2 {
+                font-size: 2.5rem; // Larger font for desktops
+            }
+
+            .contact-form {
+                input, textarea {
+                    font-size: 1.2rem; // Increase font size for desktop
+                }
+
+                .submit-button {
+                    font-size: 1.2rem; // Larger button text for desktop
+                }
+            }
+
+            .contact-info {
+                font-size: 1.2rem; // Increase text size for desktop
+            }
+
+            .social-media {
+                gap: 1.5rem; // More spacing between links on desktop
+            }
+        }
+    }
+}
+
+
+
+// .footer {
+//     background-color: #D3D3D3; // Light Gray (Primary)
+//     padding: 2rem;
+//     text-align: center;
+//     color: #0000FF; // Blue (Accent)
+
+//     .footer-content {
+//         max-width: 600px;
+//         margin: 0 auto;
+
+//         h2 {
+//             margin-bottom: 1rem;
+//         }
+
+//         .contact-form {
+//             display: flex;
+//             flex-direction: column;
+//             margin-bottom: 2rem;
+
+//             label {
+//                 margin-bottom: 1rem;
+//                 color: #0000FF; // Blue (Accent)
+//             }
+
+//             input, textarea {
+//                 width: 100%;
+//                 padding: 0.5rem;
+//                 margin-top: 0.5rem;
+//                 border: 1px solid #0000FF; // Blue (Accent)
+//                 border-radius: 5px;
+//             }
+
+//             .submit-button {
+//                 background-color: #0000FF; // Blue (Accent)
+//                 color: #FFFFFF; // White (Secondary)
+//                 border: none;
+//                 padding: 0.75rem;
+//                 border-radius: 5px;
+//                 cursor: pointer;
+//                 font-weight: bold;
+//                 transition: background-color 0.3s ease;
+
+//                 &:hover {
+//                     background-color: #D3D3D3; // Light Gray (Primary)
+//                     color: #0000FF; // Blue text on hover
+//                 }
+//             }
+//         }
+
+//         .contact-info {
+//             margin-bottom: 1.5rem;
+
+//             a {
+//                 color: #0000FF; // Blue (Accent)
+//                 text-decoration: none;
+
+//                 &:hover {
+//                     text-decoration: underline;
+//                 }
+//             }
+//         }
+
+//         .social-media {
+//             display: flex;
+//             justify-content: center;
+//             gap: 1rem;
+
+//             .social-link {
+//                 color: #0000FF; // Blue (Accent)
+//                 text-decoration: none;
+//                 padding: 0.5rem 1rem;
+//                 border: 1px solid #0000FF; // Blue (Accent)
+//                 border-radius: 5px;
+//                 transition: background-color 0.3s, transform 0.3s;
+
+//                 &:hover {
+//                     background-color: #0000FF; // Blue (Accent)
+//                     color: #FFFFFF; // White (Secondary)
+//                     transform: translateY(-2px);
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,50 @@
+.hero__cta {
+    background-color: #D3D3D3; // Light Gray (Primary)
+    color: #0000FF;            // Blue (Accent)
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #0000FF, 0 9px 15px rgba(0, 0, 0, 0.15); // 3D shadow effect
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #FFFFFF;  // White (Secondary)
+        color: #0000FF;  // Blue text
+        box-shadow: 0 4px 0 #0000FF, 0 6px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        box-shadow: 0 2px 0 #0000FF;
+        transform: translateY(2px);
+    }
+}
+
+
+// .hero__cta {
+//     background-color: #D3D3D3;  // Light Gray (Primary)
+//     color: #0000FF;             // Blue (Accent)
+//     border: none;
+//     border-radius: 8px;
+//     padding: 1rem 2rem;
+//     font-size: 1.2rem;
+//     font-weight: bold;
+//     cursor: pointer;
+//     box-shadow: 0 6px 0 #0000FF, 0 9px 15px rgba(0, 0, 0, 0.15); // 3D shadow effect
+//     transition: all 0.3s ease-in-out;
+
+//     &:hover {
+//         background-color: #FFFFFF;  // White (Secondary) on hover
+//         color: #0000FF;  // Blue text
+//         box-shadow: 0 4px 0 #0000FF, 0 6px 10px rgba(0, 0, 0, 0.1); // Reduced shadow on hover
+//         transform: translateY(-4px);  // Lift effect on hover
+//     }
+
+//     &:active {
+//         box-shadow: 0 2px 0 #0000FF;  // Reduced shadow on click
+//         transform: translateY(2px);   // Button moves down when clicked
+//     }
+// }
