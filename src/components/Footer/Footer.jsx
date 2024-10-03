@@ -64,10 +64,10 @@ const Footer = () => {
                     <p>📧 Email: <a href="mailto:mega.lviv19@gmail.com">mega.lviv19@gmail.com</a></p>
                 </div>
                 <div className="social-media">
-                    <a href="#" className="social-link">Facebook</a>
-                    <a href="#" className="social-link">Twitter</a>
-                    <a href="#" className="social-link">Instagram</a>
-                    <a href="#" className="social-link">LinkedIn</a>
+                    <a href="https://www.facebook.com" className="social-link">Facebook</a>
+                    <a href="https://www.x.com" className="social-link">Twitter</a>
+                    <a href="https://www.instagram.com" className="social-link">Instagram</a>
+                    <a href="https://www.linkedin.com" className="social-link">LinkedIn</a>
                 </div>
             </div>
         </footer>
