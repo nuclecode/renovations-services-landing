@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# How-to do allure
+
+```bash
+# Install dependencies
+npm install
+```
+
+```bash
+# Run the tests
+npm test
+```
+
+```bash
+# Generate allure report
+npx allure serve
+```
+
+## Run Tests and Generate Allure Report:
+Run the tests using Playwright and generate the Allure report:
+
+```bash
+
+npx playwright test
+npm run allure:generate
+npm run allure:open
+```

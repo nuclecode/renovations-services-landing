@@ -6,6 +6,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "allure-js-commons": "3.0.4",
+    "jsdom": "25.0.1",
+    "playwright": "^1.48.0",
+    "process": "0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -15,8 +19,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test react": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test": "npm playwright test",
+    "test:chrome": "npx playwright test --project chromium",
+    "test:firefox": "npx playwright test --project firefox",
+    "test:webkit": "npx playwright test --project webkit",
+    "testUI:chrome": "npx playwright test --ui --project chromium",
+    "test:all:firefox": "npx playwright test -c playwright.config.firefox.js",
+    "test:all:webkit": "npx playwright test -c playwright.config.webkit.js",
+    "allure:generate": "allure generate --clean",
+    "allure:open": "allure open"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +48,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.5",
+    "allure-commandline": "2.30.0",
+    "allure-js-commons": "3.0.0-beta.7",
+    "allure-playwright": "^3.0.0-beta.7",
+    "dotenv": "16.4.5"
   }
 }
